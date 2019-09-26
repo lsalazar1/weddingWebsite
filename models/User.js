@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Schema holds different field we need for this resource
 const UserSchema = new mongoose.Schema({
     name: {
         type: String,
