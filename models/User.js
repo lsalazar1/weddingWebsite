@@ -1,6 +1,12 @@
+/**
+* A schema just hold the different fields 
+*
+* This schema is used for users, which will have:
+* name, email, password, avatar, and data created 
+**/
+
 const mongoose = require('mongoose');
 
-// Schema holds different field we need for this resource
 const UserSchema = new mongoose.Schema({
     name: {
         type: String,
