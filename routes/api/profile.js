@@ -32,7 +32,7 @@ router.get('/me', auth, async (req, res) => {
 // @desc     Create or update a user profile
 // @access   Private
 router.post(
-    '/experience', 
+    '/', 
     [
         auth,
         [
