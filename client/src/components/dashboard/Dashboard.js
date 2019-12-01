@@ -5,8 +5,7 @@ import Spinner from '../layout/Spinner';
 import { connect } from 'react-redux';
 import { getCurrentProfile, deleteAccount } from '../../actions/profile';
 import DasboardActions from './DashboardActions';
-import Experience from './Experience';
-import Education from './Education';
+import Guests from './Guests';
 
 const Dashboard = ({ 
     getCurrentProfile,
@@ -26,8 +25,7 @@ const Dashboard = ({
         {profile !== null ? (
             <Fragment>
                 <DasboardActions />
-                <Experience experience={profile.experience} />
-                <Education education={profile.education} />
+                <Guests guest={profile.guests} />
 
                 <div className="my-2">
                     <button className="btn btn-danger" onClick={() => deleteAccount()}>
