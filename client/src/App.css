@@ -74,6 +74,10 @@ img {
   color: var(--dark-color);
 }
 
+.no-cursive {
+  font-family: Arial;
+}
+
 /* Padding */
 .p {
   padding: 0.5rem;

@@ -6,14 +6,12 @@ import { createProfile } from '../../actions/profile';
 
 const CreateProfile = ({ createProfile, history }) => {
     const [formData, setFormData] = useState({
-        bio: '',
         location: '',
         food: '',
         status: '',
     });
 
     const {
-        bio,
         food,
         location,
         status,
