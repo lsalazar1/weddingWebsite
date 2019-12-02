@@ -32,10 +32,10 @@ const CreateProfile = ({ createProfile, history }) => {
                 RSVP
             </h1>
             <p className="lead">
-            <i className="fas fa-user"></i>
+            <i className="fas fa-user" />{' '}
                 Please fill this out by June 17, 2020. If needed, you will be able to change info after you've RSVP'd.
             </p>
-            <small>* = required field</small>
+            <small className="form-text">* = required field</small>
             <form className="form" onSubmit={e => onSubmit(e)}>
                 <div className="form-group">
                 <select name="status" value={status} onChange={e => onChange(e)}>
@@ -43,12 +43,12 @@ const CreateProfile = ({ createProfile, history }) => {
                     <option value="Accept">Joyfully Accepts</option>
                     <option value="Decline">Regretfully Decline</option>
                 </select>
-                <small>Will you graciously accept an invitation to our wedding?</small>
+                <small className="form-text">Will you graciously accept an invitation to our wedding?</small>
                 </div>
 
                 <div className="form-group">
-                <input type="text" placeholder="Where will you be flying from?" name="location" value={location} onChange={e => onChange(e)} />
-                <small className="form-text">City & State/Province suggested (eg. Boston, MA)</small>
+                <input type="text" placeholder="Where will you be travelling from?" name="location" value={location} onChange={e => onChange(e)} />
+                <small className="form-text">City & State/Province suggested (eg. Boston, MA or Toronto, ON)</small>
                 </div>
 
                 <div className="form-group">
@@ -60,11 +60,6 @@ const CreateProfile = ({ createProfile, history }) => {
                         <option value="vegetarian">Vegetarian Option</option>
                     </select>
                     <small className="form-text">Choose one entree. You will be served salad, pasta, sides, and a dessert during the reception.</small>
-                </div>
-
-                <div className="form-group">
-                <textarea placeholder="" name="bio" value={bio} onChange={e => onChange(e)}></textarea>
-                <small className="form-text">This is optional, but this is used for the guest list in the 'guests' tab. You'll be able to familarize yourself with people at the wedding.</small>
                 </div>
                 
                 <input type="submit" className="btn btn-primary my-1" />
