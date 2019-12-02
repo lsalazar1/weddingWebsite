@@ -240,10 +240,17 @@ img {
   margin: 1.2rem 0;
 }
 
-.form .form-text {
+.form {
   display: block;
   margin-top: 0.3rem;
   color: #888;
+}
+
+.form-text {
+  display: block;
+  margin-top: 0.3rem;
+  color: #888;
+  font-size: 1rem;
 }
 
 .form input[type='text'],

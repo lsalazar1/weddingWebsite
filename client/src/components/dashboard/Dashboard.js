@@ -36,9 +36,9 @@ const Dashboard = ({
             </Fragment>
         ) : (
             <Fragment>
-                <p>You haven't setup your profile, please do so</p>
+                <p>You haven't RSVP'd yet!</p>
                 <Link to="/create-profile" className="btn btn-primary my-1">
-                    Create Profile
+                    RSVP
                 </Link>
             </Fragment>
         )}

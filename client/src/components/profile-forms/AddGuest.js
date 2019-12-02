@@ -24,7 +24,7 @@ const AddGuest = ({ addGuest , history }) => {
                 Guests
             </h1>
             <p className="lead">
-                <i className="fas fa-code-branch"></i> Add any guests that you will be bringing
+                <i className="fas fa-code-branch"></i> Add any guests that you will be bringing. Please enter one at a time.
             </p>
             <small>* = required field</small>
             <form className="form" onSubmit={e => {
