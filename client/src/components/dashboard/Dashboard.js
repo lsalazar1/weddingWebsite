@@ -20,7 +20,7 @@ const Dashboard = ({
     return loading && profile === null ? <Spinner /> : <Fragment>
         <h1 className="large text-primary">Dashboard</h1>
         <p className="lead">
-            <i className="fas fa-user"></i> Welcome { user && user.name}
+            <i className="fas fa-user"></i> Welcome { user && user.name.trim().split(' ')[0]}!
         </p>
         {profile !== null ? (
             <Fragment>
@@ -36,7 +36,7 @@ const Dashboard = ({
             </Fragment>
         ) : (
             <Fragment>
-                <p>You haven't RSVP'd yet!</p>
+                <p>Let's start by filling out your RSVP. </p>
                 <Link to="/create-profile" className="btn btn-primary my-1">
                     RSVP
                 </Link>

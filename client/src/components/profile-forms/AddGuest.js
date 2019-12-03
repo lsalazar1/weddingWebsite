@@ -24,15 +24,16 @@ const AddGuest = ({ addGuest , history }) => {
                 Guests
             </h1>
             <p className="lead">
-                <i className="fas fa-code-branch"></i> Add any guests that you will be bringing. Please enter one at a time.
+                <i className="fas fa-user-friends" />{' '} Add any guests that you will be bringing to the wedding. This will help us keep an accurate head count.
             </p>
-            <small>* = required field</small>
+            <small className="form-text">* = required field</small>
             <form className="form" onSubmit={e => {
                 e.preventDefault();
                 addGuest(formData, history);
             }}>
                 <div className="form-group">
-                <input type="text" placeholder="* Guest name" name="name" value={name} onChange={e => onChange(e)} required />
+                    <input type="text" placeholder="* Guest name" name="name" value={name} onChange={e => onChange(e)} required />
+                    <small className="form-text">Enter one guest</small>
                 </div>
                
                 <div className="form-group">

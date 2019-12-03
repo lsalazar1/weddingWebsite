@@ -60,8 +60,8 @@ const EditProfile = ({
                 </div>
 
                 <div className="form-group">
-                <input type="text" placeholder="Where will you be flying from?" name="location" value={location} onChange={e => onChange(e)} />
-                <small className="form-text">City & State/Province suggested (eg. Boston, MA)</small>
+                <input type="text" placeholder="Where will you be travelling from?" name="location" value={location} onChange={e => onChange(e)} />
+                <small className="form-text">City & State/Province suggested (eg. Boston, MA or Toronto, ON)</small>
                 </div>
 
                 <div className="form-group">

@@ -7,6 +7,10 @@
   --success-color: #28a745;
 }
 
+.post-name {
+  color: var(--primary-color)
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -72,6 +76,10 @@ img {
 
 .text-dark {
   color: var(--dark-color);
+}
+
+.no-cursive {
+  font-family: Arial;
 }
 
 /* Padding */
@@ -250,7 +258,7 @@ img {
   display: block;
   margin-top: 0.3rem;
   color: #888;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .form input[type='text'],

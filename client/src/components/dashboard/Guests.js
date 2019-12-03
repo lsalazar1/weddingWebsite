@@ -14,7 +14,7 @@ const Guests = ({ guest, deleteGuest }) => {
                     onClick={() => deleteGuest(g._id)}
                     className="btn btn-danger"
                 >
-                Delete
+                    <i className="fa fa-minus" />
                 </button>
             </td>    
         </tr>
