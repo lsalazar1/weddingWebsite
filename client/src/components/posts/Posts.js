@@ -8,7 +8,7 @@ import Spinner from '../layout/Spinner';
 const Posts = ({ getPosts, post: { posts, loading } }) => {
     useEffect(() => {
         getPosts();
-    }, [getPosts]);
+    }, [getPosts, posts]);
 
     return (
         loading ? <Spinner /> : (
