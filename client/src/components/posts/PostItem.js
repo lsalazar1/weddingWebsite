@@ -27,10 +27,8 @@ const PostItem = ({
 }) => (
     <div class="post bg-white p-1 my-1">
         <div>
-            <a href="profile.html">
-                <img class="round-img" src={avatar} alt="" />
-                <h4>{name}</h4>
-            </a>
+            <img class="round-img" src={avatar} alt="" />
+            <h4 class="post-name">{name}</h4>
         </div>
         <div>
             <p class="my-1 no-cursive">

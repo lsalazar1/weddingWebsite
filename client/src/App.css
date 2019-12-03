@@ -7,6 +7,10 @@
   --success-color: #28a745;
 }
 
+.post-name {
+  color: var(--primary-color)
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
