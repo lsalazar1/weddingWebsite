@@ -165,7 +165,7 @@ export const deleteAccount = () => async dispatch => {
             dispatch({ type: CLEAR_PROFILE });
             dispatch({ type: ACCOUNT_DELETED });
     
-            dispatch(setAlert('Your account has been permanantly delete'))
+            dispatch(setAlert('Sorry to see you go :('))
         } catch (err) {
             dispatch({
                 type: PROFILE_ERROR,
