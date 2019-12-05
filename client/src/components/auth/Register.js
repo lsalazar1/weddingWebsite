@@ -53,6 +53,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             value={email}
             onChange={e => onChange(e)}  
           />
+        <small className="form-text">This website makes use of Gravatar. If you have one, register with that email. Otherwise, don't worry about it. :{')'}</small>
         </div>
         <div className="form-group">
           <input
