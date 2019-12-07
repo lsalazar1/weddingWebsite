@@ -32,11 +32,10 @@ Here are some links that may help:
 
 ~~RSVP page will allow invitees to RSVP for the event and choose their food. Please refer to menu for list of items. We should also think about having some type of authentication for our website to prevent your typical schmuck from accessing the website.~~
 
-```
+
 Display a map that'll show the location of the event. If possible, mark these locations:
     - Wedding venue
     - Hotel (Once Sandra and I block the rooms)
-```
-```
+
+
 A page should have details of our relationship or display pictures of the wedding party (plus Kenneth, since he's helping me with this website).
-```
