@@ -29,9 +29,9 @@ Here are some links that may help:
 - [ ] Test
 
 ## Must Have Functionalities
-```
-RSVP page will allow invitees to RSVP for the event and choose their food. Please refer to menu for list of items. We should also think about having some type of authentication for our website to prevent your typical schmuck from accessing the website.
-```
+
+~~RSVP page will allow invitees to RSVP for the event and choose their food. Please refer to menu for list of items. We should also think about having some type of authentication for our website to prevent your typical schmuck from accessing the website.~~
+
 ```
 Display a map that'll show the location of the event. If possible, mark these locations:
     - Wedding venue
