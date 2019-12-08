@@ -10,7 +10,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <li>
         <Link to="/our-story">
         <i className="fas fa-book" />{' '}
-          Our Story
+          <span className="hide-sm">Our Story</span>
         </Link>
       </li>
       <li>
