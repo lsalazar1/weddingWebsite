@@ -134,6 +134,14 @@ img {
   margin: 3rem 0;
 }
 
+.margin-right {
+  margin-right: 1rem;
+}
+
+.tab {
+  text-indent: 40px;
+}
+
 .btn {
   display: inline-block;
   background: var(--light-color);
