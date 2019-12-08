@@ -37,7 +37,7 @@ const Dashboard = ({
         ) : (
             <Fragment>
                 <p className="form-text">Thank you so much for going through these extra steps of going through 
-                our website to RSVP! We found out RSVP cards were expensive as hell, so we decided 
+                our website to RSVP! We found RSVP cards were expensive, so we decided 
                 to create a website that did everything for us.</p>
                 <Link to="/create-profile" className="btn btn-primary my-1">
                     RSVP
