@@ -11,7 +11,6 @@ const EditProfile = ({
     profile: { profile, loading } 
 }) => {
     const [formData, setFormData] = useState({
-        location: '',
         status: '',
         food: ''
     });
@@ -20,14 +19,12 @@ const EditProfile = ({
         getCurrentProfile();
 
         setFormData({
-            location: loading || !profile.location ? '' : profile.location,
             status: loading || !profile.status ? '' : profile.status,
             food: loading || !profile.food ? '' : profile.food
         });
     }, [loading, getCurrentProfile]);
 
     const {
-        location,
         status,
         food
     } = formData;
@@ -57,11 +54,6 @@ const EditProfile = ({
                     <option value="Decline">Regretfully Decline</option>
                 </select>
                 <small className="form-text">Will you graciously accept an invitation to our wedding?</small>
-                </div>
-
-                <div className="form-group">
-                <input type="text" placeholder="Where will you be travelling from?" name="location" value={location} onChange={e => onChange(e)} />
-                <small className="form-text">City & State/Province suggested (eg. Boston, MA or Toronto, ON)</small>
                 </div>
 
                 <div className="form-group">
