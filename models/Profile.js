@@ -8,9 +8,6 @@ const ProfileSchema = new mongoose.Schema({
     bio: {
         type: String,
     },
-    location: {
-        type: String
-    },
     status: {
         type: String,
         required: true

@@ -53,8 +53,6 @@ router.post(
         }
 
         const {
-            bio,
-            location,
             status,
             food
         } = req.body;
@@ -65,7 +63,6 @@ router.post(
         profileFields.user = req.user.id;
         //if (bio) profileFields.bio = bio;
         if (food) profileFields.food = food;
-        if (location) profileFields.location = location;
         if (status) profileFields.status = status;
 
         try {
