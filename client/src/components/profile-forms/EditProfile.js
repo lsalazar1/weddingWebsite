@@ -11,7 +11,6 @@ const EditProfile = ({
     profile: { profile, loading } 
 }) => {
     const [formData, setFormData] = useState({
-        location: '',
         status: '',
         food: ''
     });
@@ -20,14 +19,12 @@ const EditProfile = ({
         getCurrentProfile();
 
         setFormData({
-            location: loading || !profile.location ? '' : profile.location,
             status: loading || !profile.status ? '' : profile.status,
             food: loading || !profile.food ? '' : profile.food
         });
     }, [loading, getCurrentProfile]);
 
     const {
-        location,
         status,
         food
     } = formData;
@@ -59,21 +56,18 @@ const EditProfile = ({
                 <small className="form-text">Will you graciously accept an invitation to our wedding?</small>
                 </div>
 
-                <div className="form-group">
-                <input type="text" placeholder="Where will you be travelling from?" name="location" value={location} onChange={e => onChange(e)} />
-                <small className="form-text">City & State/Province suggested (eg. Boston, MA or Toronto, ON)</small>
-                </div>
-
-                <div className="form-group">
-                    <select name="food" value={food} onChange={e => onChange(e)}>
-                        <option value="0">* Main Entree </option>
-                        <option value="Beef">10 oz. AAA New York Strip</option>
-                        <option value="Chicken">8 oz. Grilled Chicken</option>
-                        <option value="Fish">8 oz. Atlantic Salmon</option>
-                        <option value="vegetarian">Vegetarian Option</option>
-                    </select>
-                    <small className="form-text">Choose one entree. You will be served salad, pasta, sides, and a dessert during the reception.</small>
-                </div>
+                {status && status === 'Accept' && (
+                    <div className="form-group">
+                        <select name="food" value={food} onChange={e => onChange(e)}>
+                            <option value="0">* Main Entree </option>
+                            <option value="Beef">10 oz. AAA New York Strip</option>
+                            <option value="Chicken">8 oz. Grilled Chicken</option>
+                            <option value="Fish">8 oz. Atlantic Salmon</option>
+                            <option value="vegetarian">Vegetarian Option</option>
+                        </select>
+                        <small className="form-text">Choose one entree. You will be served salad, pasta, sides, and a dessert during the reception.</small>
+                    </div>
+                )}
                 
                 <input type="submit" className="btn btn-primary my-1" />
                 <Link className="btn btn-light my-1" to="/dashboard">Go Back</Link>

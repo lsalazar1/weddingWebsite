@@ -39,9 +39,6 @@ router.post(
         [
             check('status', 'You forgot to accept or decline!')
                 .not()
-                .isEmpty(),
-            check('food', 'You forgot to choose something to eat!')
-                .not()
                 .isEmpty()
         ]
     ],
@@ -53,8 +50,6 @@ router.post(
         }
 
         const {
-            bio,
-            location,
             status,
             food
         } = req.body;
@@ -63,9 +58,7 @@ router.post(
         const profileFields = {};
 
         profileFields.user = req.user.id;
-        //if (bio) profileFields.bio = bio;
         if (food) profileFields.food = food;
-        if (location) profileFields.location = location;
         if (status) profileFields.status = status;
 
         try {
@@ -158,9 +151,6 @@ router.put(
         auth,
         [
             check('name', 'Please enter a name for your guest')
-                .not()
-                .isEmpty(),
-            check('food', 'Please choose an entree')
                 .not()
                 .isEmpty()
         ]

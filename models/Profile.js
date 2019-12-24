@@ -8,16 +8,12 @@ const ProfileSchema = new mongoose.Schema({
     bio: {
         type: String,
     },
-    location: {
-        type: String
-    },
     status: {
         type: String,
         required: true
     },
     food: {
         type: String,
-        required: true
     },
     avatar: {
         type: String
@@ -30,7 +26,6 @@ const ProfileSchema = new mongoose.Schema({
             },
             food: {
                 type: String,
-                required: true
             }
         }
     ],
