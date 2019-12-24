@@ -14,7 +14,6 @@ const ProfileSchema = new mongoose.Schema({
     },
     food: {
         type: String,
-        required: true
     },
     avatar: {
         type: String
@@ -27,7 +26,6 @@ const ProfileSchema = new mongoose.Schema({
             },
             food: {
                 type: String,
-                required: true
             }
         }
     ],
