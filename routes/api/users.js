@@ -53,8 +53,7 @@ router.post(
                 name,
                 email,
                 avatar,
-                password,
-                admin
+                password
             });
 
             // Encrypt password

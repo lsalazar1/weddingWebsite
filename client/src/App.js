@@ -12,7 +12,6 @@ import AddGuest from './components/profile-forms/AddGuest';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
 import PrivateRoute from './components/routing/PrivateRoute';
-
 import './App.css';
 
 // Redux stuff
@@ -21,6 +20,7 @@ import store from './store';
 import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
 import OurStory from './components/our-story/OurStory';
+import Information from './components/information/Information';
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -43,6 +43,7 @@ const App = () => {
               <Route exact path="/our-story" component={OurStory} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/information" component={Information} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute exact path="/create-profile" component={CreateProfile} />
               <PrivateRoute exact path="/edit-profile" component={EditProfile} />

@@ -36,7 +36,7 @@ const Dashboard = ({
             </Fragment>
         )}
 
-        {profile === null && user.admin === false && (
+        {profile === null && (
             <Fragment>
                 <p className="form-text">Thank you so much for going through these extra steps of going through 
                 our website to RSVP! We found RSVP cards were expensive, so we decided 
@@ -45,10 +45,6 @@ const Dashboard = ({
                     RSVP
                 </Link>
             </Fragment>
-        )}
-
-        {user.admin === true && (
-            <Fragment>Testing</Fragment>
         )}
     </Fragment>
 };
