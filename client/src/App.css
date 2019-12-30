@@ -251,6 +251,15 @@ img {
   height: 100%;
 }
 
+.location {
+  display: inline-block;
+  float: left;
+  border: 1px solid #000000;
+  background-color: var(--primary-color);
+  text-align: center;
+  color: white;
+}
+
 /* Forms */
 .form .form-group {
   margin: 1.2rem 0;
