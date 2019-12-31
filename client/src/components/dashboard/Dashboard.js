@@ -15,14 +15,14 @@ const Dashboard = ({
 }) => {
     useEffect(() => {
         getCurrentProfile();
-    }, [getCurrentProfile]);
+    }, [getCurrentProfile])
 
     return loading && profile === null ? <Spinner /> : <Fragment>
         <h1 className="large text-primary">Dashboard</h1>
         <p className="lead">
             <i className="fas fa-user"></i> Welcome { user && user.name.trim().split(' ')[0]}!
         </p>
-        {profile !== null ? (
+        {profile !== null && (
             <Fragment>
                 <DasboardActions />
                 <Guests guest={profile.guests} />
@@ -34,7 +34,9 @@ const Dashboard = ({
                     </button>
                 </div> 
             </Fragment>
-        ) : (
+        )}
+
+        {profile === null && (
             <Fragment>
                 <p className="form-text">Thank you so much for going through these extra steps of going through 
                 our website to RSVP! We found RSVP cards were expensive, so we decided 

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 import { connect } from 'react-redux';
 import { addLike, removeLike, deletePost } from '../../actions/post';
-import Post from '../post/Post';
 
 const PostItem = ({ 
     post: { 
@@ -37,7 +36,11 @@ const PostItem = ({
             </p>
 
             {showActions && <Fragment>
-                <button onClick={e => addLike(_id)} type="button" class="btn btn-light">
+                <button 
+                    onClick={() => addLike(_id)} 
+                    type="button" 
+                    class="btn btn-light"
+                >
                 <i class="fas fa-plus" />
                     <span>
                     {likes.length > 0 && (
@@ -45,7 +48,11 @@ const PostItem = ({
                     )}
                     </span>
                 </button>
-                <button onClick={e => removeLike(_id)} type="button" class="btn btn-light">
+                <button 
+                    onClick={() => removeLike(_id)} 
+                    type="button" 
+                    class="btn btn-light"
+                >
                 <i class="fas fa-minus" />
                 </button>
                 <Link to={`/posts/${_id}`} class="btn btn-primary">

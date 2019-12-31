@@ -251,6 +251,16 @@ img {
   height: 100%;
 }
 
+.location {
+  display: inline-block;
+  float: left;
+  border: 1px solid #ccc;
+  background-color: var(--primary-color);
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+
 /* Forms */
 .form .form-group {
   margin: 1.2rem 0;
@@ -370,6 +380,10 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+h2.headerTest {
   text-align: center;
 }
 
@@ -565,6 +579,15 @@ button {
   }
 
   /* Profile Page */
+  .profile {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    align-items: center;
+    grid-gap: 2rem;
+    padding: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
 
   .profile-top img,
   .profile img {
