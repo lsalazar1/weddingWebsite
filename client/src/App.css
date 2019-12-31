@@ -258,6 +258,7 @@ img {
   background-color: var(--primary-color);
   text-align: center;
   color: white;
+  margin: auto;
 }
 
 /* Forms */
