@@ -1,17 +1,15 @@
 import React, { Fragment } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-const Information = () => {
+const Information = ({ auth: {isAuthenticated, loading} }) => {
     const style ={
         border:0,
         marginwidth:"10px"
     };
 
-    return (
-        <Fragment>
-            <h1 className="large text-primary">Information</h1>
-            <p className="lead">
-                <i className="fas fa-info-circle" />{' '} Helpful info about the event and wedding registry
-            </p>
+    const authView = (
+        <div>
             <h2 className="headerTest">Notable Locations</h2>
             <div className="my-1 bg-light location">
                 <div className="p-2">
@@ -23,7 +21,7 @@ const Information = () => {
                         style={style}
                         allowFullscreen=""
                     />
-                    <p className="no-cursive">The ceremony will take place at Fantasy Farms near the Don Valley Pkwy. It is scheduled to begin at 4pm on October 17, 2020. There will be free parking.</p>
+                    <p className="no-cursive">The ceremony will take place at Fantasy Farms near the Don Valley Pkwy. The wedding is scheduled to begin at 4pm on October 17, 2020. The venue will provide free parking for guests, if you plan on using your car.</p>
                 </div>
                 <hr />
                 <div className="p-2">
@@ -38,8 +36,29 @@ const Information = () => {
                     <p className="no-cursive">We have blocked numerous rooms for you at the  x {'hotel'} for those travelling into town. The {'hotel'} is x minutes away.</p>
                 </div>
             </div>
+        </div>
+    );
+    
+    return (
+        <Fragment>
+            <h1 className="large text-primary">Information</h1>
+            <p className="lead">
+                <i className="fas fa-info-circle" />{' '} Helpful info about the event and wedding registry
+            </p>
+            { !loading && (<Fragment>{ isAuthenticated ? authView : <div>Test</div>  }</Fragment>)}
         </Fragment>
-    )
+    );
 };
 
-export default Information;
+Information.propTypes = {
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+    auth: state.auth
+});
+
+export default connect(
+    mapStateToProps,
+    {}
+)(Information);
