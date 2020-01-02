@@ -8,11 +8,13 @@ const CreateProfile = ({ createProfile, history }) => {
     const [formData, setFormData] = useState({
         food: '',
         status: '',
+        specialFoodRequest: ''
     });
 
     const {
         food,
         status,
+        specialFoodRequest
     } = formData;
 
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,9 +26,7 @@ const CreateProfile = ({ createProfile, history }) => {
 
     return (
         <Fragment>
-            <h1 className="large text-primary">
-                RSVP
-            </h1>
+            <h1 className="large text-primary">RSVP</h1>
             <p className="lead">
             <i className="fas fa-user" />{' '}
                 Please fill this out by June 17, 2020. If needed, you will be able to change info after you've RSVP'd.
@@ -52,6 +52,15 @@ const CreateProfile = ({ createProfile, history }) => {
                             <option value="vegetarian">Vegetarian Option</option>
                         </select>
                         <small className="form-text">Choose one entree. You will be served salad, pasta, sides, and a dessert during the reception.</small>
+                        <textarea
+                            name="specialFoodRequest"
+                            cols="30"
+                            rows="5"
+                            placeholder={specialFoodRequest}
+                            value={specialFoodRequest}
+                            onChange={e => onChange(e)}
+                        />
+                        <small className="form-text">If you have any food allergies or dietery restrictions, please let us know. If none, leave this blank.</small>
                     </div>
                 )}
 

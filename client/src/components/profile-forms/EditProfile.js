@@ -12,7 +12,8 @@ const EditProfile = ({
 }) => {
     const [formData, setFormData] = useState({
         status: '',
-        food: ''
+        food: '',
+        specialFoodRequest: ''
     });
 
     useEffect(() => {
@@ -20,13 +21,15 @@ const EditProfile = ({
 
         setFormData({
             status: loading || !profile.status ? '' : profile.status,
-            food: loading || !profile.food ? '' : profile.food
+            food: loading || !profile.food ? '' : profile.food,
+            specialFoodRequest: loading || !profile.specialFoodRequest ? '' : profile.specialFoodRequest
         });
     }, [loading, getCurrentProfile]);
 
     const {
         status,
-        food
+        food,
+        specialFoodRequest
     } = formData;
 
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -66,6 +69,15 @@ const EditProfile = ({
                             <option value="vegetarian">Vegetarian Option</option>
                         </select>
                         <small className="form-text">Choose one entree. You will be served salad, pasta, sides, and a dessert during the reception.</small>
+                        <textarea
+                            name="specialFoodRequest"
+                            cols="30"
+                            rows="5"
+                            placeholder=""
+                            value={specialFoodRequest}
+                            onChange={e => onChange(e)}
+                        />
+                        <small className="form-text">If you have any food allergies or dietery restrictions, please let us know. If none, leave this blank.</small>
                     </div>
                 )}
                 
