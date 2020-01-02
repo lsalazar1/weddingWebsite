@@ -51,7 +51,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <li>
         <Link to="/information">
         <i className="fas fa-info-circle" />{' '}
-          <span className="hide-sm">Information</span>
+          Information
         </Link>
       </li>     
       <li><Link to="/register">Register</Link></li>
