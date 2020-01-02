@@ -56,6 +56,11 @@ img {
   color: black;
 }
 
+
+.registry {
+  margin-top: 1rem;
+}
+
 /* Utilities */
 .container {
   max-width: 1100px;
@@ -271,12 +276,12 @@ img {
 
 .location {
   display: inline-block;
-  float: left;
   border: 1px solid #ccc;
   background-color: var(--primary-color);
   text-align: center;
   color: white;
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 /* Forms */
