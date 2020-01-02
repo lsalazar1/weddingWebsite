@@ -46,7 +46,7 @@ const CreateProfile = ({ createProfile, history }) => {
                     <div className="form-group">
                         <select name="food" value={food} onChange={e => onChange(e)}>
                             <option value="0">* Main Entree </option>
-                            <option value="Beef">10 oz. AAA New York Strip</option>
+                            <option value="Beef">10 oz. AAA New York Strip Steak</option>
                             <option value="Chicken">8 oz. Grilled Chicken</option>
                             <option value="Fish">8 oz. Atlantic Salmon</option>
                             <option value="vegetarian">Vegetarian Option</option>
@@ -56,11 +56,11 @@ const CreateProfile = ({ createProfile, history }) => {
                             name="specialFoodRequest"
                             cols="30"
                             rows="5"
-                            placeholder={specialFoodRequest}
+                            placeholder=""
                             value={specialFoodRequest}
                             onChange={e => onChange(e)}
                         />
-                        <small className="form-text">If you have any food allergies or dietery restrictions, please let us know. If none, leave this blank.</small>
+                        <small className="form-text">If you have any food allergies or dietery restrictions, please let us know. Otherwise, leave this blank.</small>
                     </div>
                 )}
 

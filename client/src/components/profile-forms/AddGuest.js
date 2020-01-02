@@ -8,10 +8,11 @@ import { addGuest } from '../../actions/profile';
 const AddGuest = ({ addGuest , history }) => {
     const [formData, setFormData] = useState({
         name: '',
-        food:''
+        food:'',
+        specialFoodRequest: ''
     });
 
-    const { name, food } = formData;
+    const { name, food, specialFoodRequest } = formData;
 
     const onChange = e => setFormData({
         ...formData,
@@ -39,12 +40,24 @@ const AddGuest = ({ addGuest , history }) => {
                 <div className="form-group">
                     <select name="food" value={food} onChange={e => onChange(e)}>
                         <option value="0">* Main Entree </option>
-                        <option value="Beef">10 oz. AAA New York Strip</option>
+                        <option value="Beef">10 oz. AAA New York Strip Steak</option>
                         <option value="Chicken">8 oz. Grilled Chicken</option>
                         <option value="Fish">8 oz. Atlantic Salmon</option>
                         <option value="Vegetarian">Vegetarian Option</option>
                     </select>
                     <small className="form-text">Choose one entree. You will be served salad, pasta, sides, and a dessert during the reception.</small>
+                </div>
+
+                <div className="form-group">
+                    <textarea
+                        name="specialFoodRequest"
+                        cols="30"
+                        rows="5"
+                        placeholder=""
+                        value={specialFoodRequest}
+                        onChange={e => onChange(e)}
+                    />
+                    <small className="form-text">If your guest has any food allergies or dietary restrictions, please let us know. Otherwise, leave this blank.</small>
                 </div>
 
                 <input type="submit" className="btn btn-primary my-1" />

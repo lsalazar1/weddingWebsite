@@ -77,7 +77,7 @@ const EditProfile = ({
                             value={specialFoodRequest}
                             onChange={e => onChange(e)}
                         />
-                        <small className="form-text">If you have any food allergies or dietery restrictions, please let us know. If none, leave this blank.</small>
+                        <small className="form-text">If you have any food allergies or dietery restrictions, please let us know. Otherwise, leave this blank.</small>
                     </div>
                 )}
                 

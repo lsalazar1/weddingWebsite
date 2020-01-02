@@ -29,6 +29,9 @@ const ProfileSchema = new mongoose.Schema({
             },
             food: {
                 type: String,
+            },
+            specialFoodRequest: {
+                type: String
             }
         }
     ],
