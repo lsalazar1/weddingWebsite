@@ -16,7 +16,7 @@ const Posts = ({ getPosts, post: { posts, loading }, match }) => {
             <Fragment>
                 <h1 className="large text-primary">Posts</h1>
                 <p className="lead">
-                    <i className="fas fa-user" />{' '} Do you have any questions or post something sweet for us? This page is great for that!
+                    <i className="fas fa-envelope" />{' '} Do you have any questions or post something sweet for us? This page is great for that!
                 </p>
                 <PostForm />
                 <div className="posts">
