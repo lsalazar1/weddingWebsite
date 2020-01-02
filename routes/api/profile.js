@@ -51,7 +51,8 @@ router.post(
 
         const {
             status,
-            food
+            food,
+            specialFoodRequest
         } = req.body;
 
         // Build Profile Object
@@ -60,6 +61,7 @@ router.post(
         profileFields.user = req.user.id;
         if (food) profileFields.food = food;
         if (status) profileFields.status = status;
+        if (specialFoodRequest) profileFields.specialFoodRequest = specialFoodRequest;
 
         try {
             let profile = await Profile.findOne({ user: req.user.id });
@@ -163,13 +165,15 @@ router.put(
 
         const {
             name,
-            food
+            food,
+            specialFoodRequest
         } = req.body;
 
         // Destructuring
         const newGuest = {
             name,
-            food
+            food,
+            specialFoodRequest
         }
 
         try {
