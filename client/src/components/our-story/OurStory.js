@@ -9,7 +9,7 @@ const OurStory = () => {
                 <i className="fas fa-book" />{' '} Meeting on the Internet & Overcoming Long Distance Relationships 
             </p>
             <RandomPicture />
-            <div className="my-2 p-1 bg-white no-cursive">
+            <div className="my-1 p-1 bg-white no-cursive">
                 <p className="my-1 tab margin-right">
                     Sandra and Liam met on a popular blogging website called Tumblr. They were both following a 
                     penpal blog, where each blog post was a bio of a person. Liam became interested Sandra's post and requested the blog owner for her contact information. On 
