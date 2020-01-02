@@ -21,7 +21,7 @@ body {
   font-family: 'Dancing Script', cursive;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: rgb(128,128,128, 0.30);
   color: #333;
 }
 
@@ -36,6 +36,24 @@ ul {
 
 img {
   width: 100%;
+}
+
+.img-container{
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.img-text-centered {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, 2%);
+}
+
+.img-amazon:hover {
+  opacity: .6;
+  color: black;
 }
 
 /* Utilities */
