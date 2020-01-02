@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import amazon from './assets/amazon.png';
 
 const Information = ({ auth: {isAuthenticated, loading} }) => {
     const style ={
@@ -8,9 +9,25 @@ const Information = ({ auth: {isAuthenticated, loading} }) => {
         marginwidth:"10px"
     };
 
+    const guestView =(
+        <div className="registry">
+            <h2>Registry</h2>
+            <div className="img-container">
+                <img 
+                    className="img-amazon" 
+                    src={amazon} 
+                    onClick={() =>
+                        window.location.assign('https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.amazon.com%2Fwedding%2Fliam-salazar-sandra-hayes-toronto-october-2020%2Fregistry%2FVE4C65UTZV6C%3Ffbclid%3DIwAR2Jc48yKto00GcK9oX9BkURfXEIcP80vHQ_layGNoiF6CoLoqv4bIe9JpA&h=AT25AdzAtxQximJC9wh-6ME9O18O-f86baaA99DsdK58SwsEmexRUVTdF_8FsW97G6Spy-u0npl4JPv7qT3KXj7XQJLGESSr8Bzir-kyazRkvlMKFK9vn03EdrLZhZVGr4Y')
+                    } 
+                />
+                <div className="img-text-centered">Click here for wedding registry</div>
+            </div>
+        </div>
+    );
+
     const authView = (
-        <div>
-            <h2 className="headerTest">Notable Locations</h2>
+        <div className="my-2">
+            <h2>Notable Locations</h2>
             <div className="my-1 bg-light location">
                 <div className="p-2">
                     <h2>Ceremony and Reception</h2>
@@ -36,8 +53,22 @@ const Information = ({ auth: {isAuthenticated, loading} }) => {
                     <p className="no-cursive">We have blocked numerous rooms for you at the  x {'hotel'} for those travelling into town. The {'hotel'} is x minutes away.</p>
                 </div>
             </div>
+            <div className="registry">
+                <h2>Registry</h2>
+                <div className="img-container">
+                    <img 
+                        className="img-amazon" 
+                        src={amazon} 
+                        onClick={() =>
+                            window.location.assign('https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.amazon.com%2Fwedding%2Fliam-salazar-sandra-hayes-toronto-october-2020%2Fregistry%2FVE4C65UTZV6C%3Ffbclid%3DIwAR2Jc48yKto00GcK9oX9BkURfXEIcP80vHQ_layGNoiF6CoLoqv4bIe9JpA&h=AT25AdzAtxQximJC9wh-6ME9O18O-f86baaA99DsdK58SwsEmexRUVTdF_8FsW97G6Spy-u0npl4JPv7qT3KXj7XQJLGESSr8Bzir-kyazRkvlMKFK9vn03EdrLZhZVGr4Y')
+                        }  
+                    />
+                    <div className="img-text-centered">Click here for wedding registry</div>
+                </div>
+            </div>
         </div>
     );
+
     
     return (
         <Fragment>
@@ -45,7 +76,7 @@ const Information = ({ auth: {isAuthenticated, loading} }) => {
             <p className="lead">
                 <i className="fas fa-info-circle" />{' '} Helpful info about the event and wedding registry
             </p>
-            { !loading && (<Fragment>{ isAuthenticated ? authView : <div>Test</div>  }</Fragment>)}
+            { !loading && (<Fragment>{ isAuthenticated ? authView : guestView  }</Fragment>)}
         </Fragment>
     );
 };
