@@ -30,7 +30,7 @@ const Information = ({ auth: {isAuthenticated, loading} }) => {
             <h2>Notable Locations</h2>
             <div className="my-1 bg-light location">
                 <div className="p-2">
-                    <h2>Ceremony and Reception</h2>
+                    <h2>Fantasy Farms</h2>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46178.73793045959!2d-79.39896679763146!3d43.6654108203537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ccbd049a18f1%3A0x53160479e6f6dfd1!2sFantasy%20Farms!5e0!3m2!1sen!2sca!4v1577650185377!5m2!1sen!2sca" 
                         width="500" 
                         height="300" 
@@ -38,12 +38,12 @@ const Information = ({ auth: {isAuthenticated, loading} }) => {
                         style={style}
                         allowFullscreen=""
                     />
-                    <p className="no-cursive">The ceremony will take place at Fantasy Farms near the Don Valley Pkwy. The wedding is scheduled to begin at 4pm on October 17, 2020. The venue will provide free parking for guests, if you plan on using your car.</p>
+                    <p className="no-cursive">The ceremony and reception will take place at Fantasy Farms near the Don Valley Pkwy. The wedding is scheduled to begin at 4pm on October 17, 2020. The venue will provide free parking for guests, if you plan on using your car.</p>
                 </div>
                 <hr />
                 <div className="p-2">
-                    <h2>Hotel</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46178.73793045959!2d-79.39896679763146!3d43.6654108203537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ccbd049a18f1%3A0x53160479e6f6dfd1!2sFantasy%20Farms!5e0!3m2!1sen!2sca!4v1577650185377!5m2!1sen!2sca"
+                    <h2>Don Valley Hotel & Suites</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.32876690869!2d-79.32954808453805!3d43.72449667911887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cda385b711b1%3A0xf525b265582069d!2sToronto%20Don%20Valley%20Hotel%20%26%20Suites!5e0!3m2!1sen!2sca!4v1578016207228!5m2!1sen!2sca"
                         width="500"
                         height="300"
                         frameBorder="0"
