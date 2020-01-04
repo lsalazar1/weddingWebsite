@@ -49,7 +49,8 @@ const CreateProfile = ({ createProfile, history }) => {
                             <option value="Beef">10 oz. AAA New York Strip Steak</option>
                             <option value="Chicken">8 oz. Grilled Chicken</option>
                             <option value="Fish">8 oz. Atlantic Salmon</option>
-                            <option value="vegetarian">Vegetarian Option</option>
+                            <option value="Vegetarian">Vegetarian Option</option>
+                            <option value="kidsMeal">Kids' Meal -- Chicken Tenders & French Fries</option>
                         </select>
                         <small className="form-text">Choose one entree. You will be served salad, pasta, sides, and a dessert during the reception.</small>
                         <textarea
