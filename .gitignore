@@ -4,3 +4,5 @@ client/debug.log
 
 config/default.json
 config/production.json
+
+debug.log
