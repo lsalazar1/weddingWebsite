@@ -38,9 +38,7 @@ const Dashboard = ({
 
         {profile === null && (
             <Fragment>
-                <p className="form-text">Thank you so much for going through these extra steps of going through 
-                our website to RSVP! We found RSVP cards were expensive, so we decided 
-                to create a website that did everything for us.</p>
+                <p className="form-text">Looks like you haven't RSVP'd yet! Click the button down below to start the process.</p>
                 <Link to="/create-profile" className="btn btn-primary my-1">
                     RSVP
                 </Link>
