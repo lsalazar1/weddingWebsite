@@ -28,6 +28,7 @@ const Guests = ({ guest, deleteGuest }) => {
                     <tr>
                         <th className="hide-sm">Name</th>
                         <th className="hide-sm">Food</th>
+                        <th />
                     </tr>
                 </thead>
                 <tbody>{guests}</tbody>
