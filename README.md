@@ -24,8 +24,8 @@ Here are some links that may help:
 - [x] Set up backend server
 - [x] Create frontend
 - [x] Link backend with frontend
-- [ ] Deploy
-- [ ] Test
+- [x] Deploy
+- [x] Test
 
 ## Must Have Functionalities
 
