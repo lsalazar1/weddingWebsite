@@ -38,7 +38,7 @@ const Dashboard = ({
 
         {profile === null && (
             <Fragment>
-                <p className="form-text">Looks like you haven't RSVP'd yet! Click the button down below to start the process.</p>
+                <p className="form-text">Looks like you haven't RSVP'd yet! If someone else has already listed you as their guest, there's no need to do this. Otherwise, click the button down below to start the process.</p>
                 <Link to="/create-profile" className="btn btn-primary my-1">
                     RSVP
                 </Link>
