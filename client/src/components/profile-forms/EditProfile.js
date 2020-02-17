@@ -66,10 +66,10 @@ const EditProfile = ({
                             <option value="Beef">10 oz. AAA New York Strip</option>
                             <option value="Chicken">8 oz. Grilled Chicken</option>
                             <option value="Fish">8 oz. Atlantic Salmon</option>
-                            <option value="Vegetarian">Vegetarian Option</option>
-                            <option value="kidsMeal">Kids' Meal -- Chicken Tenders & French Fries</option>
+                            <option value="Vegetarian">Vegetarian option - Stuffed Pepper</option>
+                            <option value="kidsMeal">Kids' Meal - Chicken Tenders & French Fries</option>
                         </select>
-                        <small className="form-text">Choose one entree. You will be served salad, pasta, sides, and a dessert during the reception.</small>
+                        <small className="form-text">Choose one entree. This entree will be part of a four-course meal that includes salad, pasta, and a dessert.</small>
                         <textarea
                             name="specialFoodRequest"
                             cols="30"

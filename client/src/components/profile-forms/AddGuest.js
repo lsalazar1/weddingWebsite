@@ -43,9 +43,10 @@ const AddGuest = ({ addGuest , history }) => {
                         <option value="Beef">10 oz. AAA New York Strip Steak</option>
                         <option value="Chicken">8 oz. Grilled Chicken</option>
                         <option value="Fish">8 oz. Atlantic Salmon</option>
-                        <option value="Vegetarian">Vegetarian Option</option>
+                        <option value="Vegetarian">Vegetarian option - Stuffed Pepper</option>
+                        <option value="kidsMeal">Kids' Meal - Chicken Tenders & French Fries</option>
                     </select>
-                    <small className="form-text">Choose one entree. You will be served salad, pasta, sides, and a dessert during the reception.</small>
+                    <small className="form-text">Choose one entree. This entree will be part of a four-course meal that includes salad, pasta, and a dessert.</small>
                 </div>
 
                 <div className="form-group">
@@ -57,7 +58,7 @@ const AddGuest = ({ addGuest , history }) => {
                         value={specialFoodRequest}
                         onChange={e => onChange(e)}
                     />
-                    <small className="form-text">If your guest has any food allergies or dietary restrictions, please let us know. Otherwise, leave this blank.</small>
+                    <small className="form-text">If your guest has any food allergies or dietary restrictions, please let us know. We will do our best to accomodate them. Otherwise, leave this blank.</small>
                 </div>
 
                 <input type="submit" className="btn btn-primary my-1" />
