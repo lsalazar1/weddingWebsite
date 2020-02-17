@@ -24,6 +24,9 @@ const Information = ({ auth: {isAuthenticated, loading} }) => {
                 />
                 <div className="img-text-centered">Click here for wedding registry</div>
             </div>
+            <div className="my-1 p-1 bg-white">
+                <p className="no-cursive my-1">Sandra and I would like to say that your presence is the greatest gift we could ask for. The time, effort, and expense of travelling to be with us is something we appreciate. We are excited to celebrate with you all. Please be aware that gifts are not necessary. However, if you wish to honor us with a gift, a registry is provided.</p>
+            </div>
         </div>
     );
 
@@ -70,6 +73,9 @@ const Information = ({ auth: {isAuthenticated, loading} }) => {
                         }  
                     />
                     <div className="img-text-centered">Click here for wedding registry</div>
+                </div>
+                <div className="my-1 p-1 bg-white">
+                    <p className="no-cursive my-1">Sandra and I would like to say that your presence is the greatest gift we could ask for. The time, effort, and expense of travelling to be with us is something we appreciate. We are excited to celebrate with you all. Please be aware that gifts are not necessary. However, if you wish to honor us with a gift, a registry is provided.</p>
                 </div>
             </div>
         </div>
